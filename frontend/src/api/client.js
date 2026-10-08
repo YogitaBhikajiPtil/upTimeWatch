@@ -12,7 +12,7 @@ async function request(path, { method = "GET", body } = {}) {
   const token = getToken();
   if (token) headers.Authorization = `Bearer ${token}`;
 
- const res = await fetch(`${import.meta.env.VITE_API_URL}/api${path}`, {
+const res = await fetch(`https://uptimewatch-backend.onrender.com/api${path}`, {
     method,
     headers,
     body: body ? JSON.stringify(body) : undefined,
