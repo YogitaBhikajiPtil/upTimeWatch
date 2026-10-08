@@ -29,6 +29,7 @@ app.add_middleware(
     "http://localhost:5173",
     "https://up-time-watch.vercel.app",
 ],
+  allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
